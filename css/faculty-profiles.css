@@ -1,0 +1,192 @@
+.faculty {
+  background-color: #fff;
+  padding: 32px 0;
+}
+.faculty-department {
+  padding: 0 35px;
+}
+.faculty-department .module {
+  padding-bottom: 50px;
+  border-bottom: 2px solid #BC1C21;
+}
+.faculty-department .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a3a3a;
+  line-height: 24px;
+  margin: 40px 0;
+}
+.faculty-department .content div {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5a5a5a;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+.faculty-lead {
+  padding: 18px 36px;
+}
+.faculty-lead .title {
+  padding: 18px 0;
+  color: #BC1C21;
+  border-bottom: 2px solid #BC1C21;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.faculty-lead .name {
+  font-size: 24px;
+  color: #BC1C21;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 12px 0;
+}
+.faculty-lead .info {
+  font-size: 14px;
+  font-weight: 400;
+  color: #636363;
+  line-height: 24px;
+}
+.faculty-organization {
+  padding: 60px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 30px;
+}
+.faculty-organization-item {
+  background-color: #fff;
+  margin-right: 24px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+.faculty-organization-item .title {
+  padding: 16px 24px;
+  color: #fff;
+  background-color: #BC1C21;
+}
+.faculty-organization-item .module {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 36px;
+  font-size: 16px;
+}
+.faculty-organization-item .module .subject-module {
+  padding-bottom: 8px;
+}
+.faculty-organization-item .module .subject-module-title {
+  color: #BC1C21;
+  font-weight: bold;
+}
+.faculty-organization-item .module .subject-module:first-child {
+  border-bottom: 2px solid #BC1C21;
+  margin-bottom: 24px;
+}
+.faculty-organization-item .module .principal-item {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px dashed #BC1C21;
+}
+.faculty-organization-item .module .principal-item span:first-child {
+  color: #BC1C21;
+}
+.faculty-organization-item .module .principal-item:last-child {
+  margin-bottom: 0;
+  border-bottom: 1px solid #BC1C21;
+}
+.faculty-organization-item .doctor-module-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #BC1C21;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.faculty-organization-item .doctor-module-item span:first-child {
+  font-weight: bold;
+  color: #BC1C21;
+}
+.faculty-organization-item:last-child {
+  margin-right: 0;
+}
+.faculty-history {
+  background-color: #fff;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+.faculty-history-header {
+  align-items: center;
+  margin-top: 42px;
+  margin-bottom: 16px;
+}
+.faculty-history-header .desc p {
+  text-align: center;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #515151;
+  line-height: 32px;
+}
+.faculty-history-header .line {
+  width: 16%;
+  height: 2px;
+  background-color: #BC1C21;
+}
+.faculty-history-content {
+  position: relative;
+  height: 100%;
+}
+.faculty-history-content .middle-line {
+  width: 1px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #BC1C21;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.faculty-history-content .list .mid {
+  width: 10%;
+  text-align: center;
+  z-index: 9;
+}
+.faculty-history-content .list .left {
+  text-align: right;
+}
+.faculty-history-content .list .right {
+  text-align: left;
+}
+.faculty-history-content .list .right,
+.faculty-history-content .list .left {
+  width: 45%;
+}
+.faculty-history-content .list-item {
+  align-items: center;
+}
+.faculty-history-content .list img {
+  width: 235px;
+  height: 137px;
+}
+.faculty-history-content .list .time {
+  font-size: 20px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #515151;
+  line-height: 24px;
+}
+.faculty-history-content .list .content {
+  font-size: 13px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #6d6d6d;
+  line-height: 24px;
+  margin-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

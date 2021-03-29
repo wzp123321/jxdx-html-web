@@ -1,349 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>师资力量</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet/less" href="./css/teacher-team.less">
-</head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/teacher-team.css" />
+  </head>
 
-<body>
+  <body>
     <!-- 头部 -->
     <header class="d-flex flex-column">
-        <div class="container">
-            <div class="topHead d-flex flex-row justify-content-between align-items-center">
-                <div class="leftSide">
-                    <div class="logo"></div>
-                </div>
-                <div class="rightSide d-flex flex-row">
-                    <div class="search d-flex align-items-center">
-                        <input type="text" />
-                        <span class="iconfont byinsousuo sBtn"></span>
-                    </div>
-                    <div class="btnChange">
-                        <span class="active">中</span>
-                        <span>En</span>
-                    </div>
-                </div>
+      <div class="container">
+        <div
+          class="topHead d-flex flex-row justify-content-between align-items-center"
+        >
+          <div class="leftSide">
+            <div class="logo"></div>
+          </div>
+          <div class="rightSide d-flex flex-row">
+            <div class="search d-flex align-items-center">
+              <input type="text" />
+              <span class="iconfont byinsousuo sBtn"></span>
             </div>
-            <nav class="d-flex flex-row">
-                <li><a href="/index.html">院系首页</a></li>
-                <li><a href="/faculty-profiles.html">院系概况</a></li>
-                <li><a href="/news.html">新闻动态</a></li>
-                <li><a href="/">党务工作</a></li>
-                <li><a href="/teacher-team.html">师资力量</a></li>
-                <li><a href="/scientific-research.html">科学研究</a></li>
-                <li><a href="/">人才培养</a></li>
-                <li><a href="/alumni.html">校友专栏</a></li>
-                <li><a href="/employ.html">人才招聘</a></li>
-            </nav>
+            <div class="btnChange">
+              <span class="active">中</span>
+              <span>En</span>
+            </div>
+          </div>
         </div>
+        <nav class="d-flex flex-row">
+          <li><a href="./index.html">院系首页</a></li>
+          <li><a href="./faculty-profiles.html">院系概况</a></li>
+          <li><a href="./news.html">新闻动态</a></li>
+          <li><a href="./index.html">党务工作</a></li>
+          <li><a href="./teacher-team.html">师资力量</a></li>
+          <li><a href="./scientific-research.html">科学研究</a></li>
+          <li><a href="./index.html">人才培养</a></li>
+          <li><a href="./alumni.html">校友专栏</a></li>
+          <li><a href="./employ.html">人才招聘</a></li>
+        </nav>
+      </div>
     </header>
     <!-- 内容 -->
     <main>
-        <div class="container">
-            <div class="common-navigate d-flex flex-row justify-content-between">
-                <div class="common-navigate-title">师资力量</div>
-                <div class="common-navigate-list">
-                    <span data-tab='1'>师资一览</span>
-                    <span data-tab='2'>按专业</span>
-                    <span data-tab='3'>按职称</span>
-                    <span data-tab='4'>兼职兼聘</span>
-                </div>
-            </div>
-            <div class="teacher components">
-                <!-- 师资一览 -->
-                <div class="teacher-team navitage_component">
-                    <div class="teacher-team-wordlist">
-                        <span :class="{ 'active-word': curWord === 'ALL' }">ALL</span><span
-                            v-for="(wordItem, wordIndex) in wordList" :key="wordIndex"
-                            :class="{ 'active-word': curWord === wordItem }">{{ wordItem }}</span>
-                    </div>
-                    <div class="teacher-team-title">
-                        测试测试
-                    </div>
-                    <div class="teacher-team-list">
-                        <div class="d-flex">
-                            <span class="name">教 授</span>
-                            <div class="list">
-                                <span>冯冬涵</span>
-                                <span>何光宇</span>
-                                <span>黎灿兵</span>
-                                <span>汪可友</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <span class="name">副教授</span>
-                            <div class="list">
-                                <span>冯冬涵</span>
-                                <span>何光宇</span>
-                                <span>黎灿兵</span>
-                                <span>汪可友</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <span class="name"> 高 工</span>
-                            <div class="list">
-                                <span>冯冬涵</span>
-                                <span>何光宇</span>
-                                <span>黎灿兵</span>
-                                <span>汪可友</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <span class="name">副 高</span>
-                            <div class="list">
-                                <span>冯冬涵</span>
-                                <span>何光宇</span>
-                                <span>黎灿兵</span>
-                                <span>汪可友</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <span class="name">助理研究员</span>
-                            <div class="list">
-                                <span>冯冬涵</span>
-                                <span>何光宇</span>
-                                <span>黎灿兵</span>
-                                <span>汪可友</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 按专业 -->
-                <div class="teacher-profession navitage_component">
-                    <div class="title">
-                        电气工程系 主任
-                    </div>
-                    <div class="list">
-                        <div class="name">张三</div>
-                        <div class="info">分工安排：全面主持行政工作</div>
-                        <div class="info">工作邮箱：zzzzzz@11.com</div>
-                    </div>
-                </div>
-                <!-- 按职称 -->
-                <div class="teacher-title navitage_component">
-                    <div class="faculty-organization-item">
-                        <div class="title">学科负责人</div>
-                        <div class="module">
-                            <div class="subject-module d-flex flex-row justify-content-between">
-                                <span class="subject-module-title">一级学科</span>
-                                <span class="subject-module-title">张三</span>
-                            </div>
-                            <div class="subject-module">
-                                <span class="subject-module-title">二级学科</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faculty-organization-item">
-                        <div class="title">教研组主任</div>
-                        <div class="module">
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                            <div class="principal-item d-flex flex-row justify-content-between">
-                                <span>张三</span>
-                                <span>测试</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="faculty-organization-item">
-                        <div class="title">博士后流动站</div>
-                        <div class="module">
-                            <div class="doctor-module-item">
-                                <span>站长</span>
-                                <span>张三</span>
-                            </div>
-                            <div class="doctor-module-item">
-                                <span>秘书</span>
-                                <span>张三</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 兼职兼聘 -->
-                <div class="teacher-parttime navitage_component">
-                    <!-- 头部 -->
-                    <div class="faculty-history-header d-flex flex-row justify-content-between">
-                        <span class="line"></span>
-                        <div class="desc">
-                            <p>电气工程系历史悠久，</p>
-                            <p>
-                                其源头可追溯到清光绪34年（1908年），唐文治担任监督（即校长），增设电机专科，预科一年，专科三年。
-                            </p>
-                            <p>在国内各大学中，上海交通大学最早创设电机工程转科。</p>
-                        </div>
-                        <span class="line"></span>
-                    </div>
-                    <!-- 列表 -->
-                    <div class="faculty-history-content">
-                        <!-- 线 -->
-                        <div class="middle-line"></div>
-                        <!-- 遍历处理时间树 -->
-                        <div class="list">
-                            <div v-for="(item, index) in historyList" :key="index" class="list-item d-flex flex-row">
-                                <div class="left">
-                                    <img v-if="index % 2 === 1 && item.imageUrl" :src="item.imageUrl" alt="" />
-                                    <div v-if="index % 2 === 0">
-                                        <div class="time">{{ item.time }}</div>
-                                        <div class="content">{{ item.content }}</div>
-                                    </div>
-                                </div>
-                                <div class="mid">
-                                    <div v-if="item.imageUrl">虚心</div>
-                                    <div v-else>实心</div>
-                                </div>
-                                <div class="right">
-                                    <img v-if="index % 2 === 0 && item.imageUrl" :src="item.imageUrl" alt="" />
-                                    <div v-if="index % 2 === 1">
-                                        <div class="time">{{ item.time }}</div>
-                                        <div class="content">{{ item.content }}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="common-navigate d-flex flex-row justify-content-between">
+          <div class="common-navigate-title">师资力量</div>
+          <div class="common-navigate-list">
+            <span data-tab="1">师资一览</span>
+            <span data-tab="2">按专业</span>
+            <span data-tab="3">按职称</span>
+            <span data-tab="4">兼职兼聘</span>
+          </div>
         </div>
+        <div class="teacher components">
+          <!-- 师资一览 -->
+          <div class="teacher-team navitage_component">
+            <div class="teacher-team-wordlist">
+              <span :class="{ 'active-word': curWord === 'ALL' }">ALL</span
+              ><span
+                v-for="(wordItem, wordIndex) in wordList"
+                :key="wordIndex"
+                :class="{ 'active-word': curWord === wordItem }"
+                >{{ wordItem }}</span
+              >
+            </div>
+            <div class="teacher-team-title">测试测试</div>
+            <div class="teacher-team-list">
+              <div class="d-flex">
+                <span class="name">教 授</span>
+                <div class="list">
+                  <span>冯冬涵</span>
+                  <span>何光宇</span>
+                  <span>黎灿兵</span>
+                  <span>汪可友</span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <span class="name">副教授</span>
+                <div class="list">
+                  <span>冯冬涵</span>
+                  <span>何光宇</span>
+                  <span>黎灿兵</span>
+                  <span>汪可友</span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <span class="name"> 高 工</span>
+                <div class="list">
+                  <span>冯冬涵</span>
+                  <span>何光宇</span>
+                  <span>黎灿兵</span>
+                  <span>汪可友</span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <span class="name">副 高</span>
+                <div class="list">
+                  <span>冯冬涵</span>
+                  <span>何光宇</span>
+                  <span>黎灿兵</span>
+                  <span>汪可友</span>
+                </div>
+              </div>
+              <div class="d-flex">
+                <span class="name">助理研究员</span>
+                <div class="list">
+                  <span>冯冬涵</span>
+                  <span>何光宇</span>
+                  <span>黎灿兵</span>
+                  <span>汪可友</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 按专业 -->
+          <div class="teacher-profession navitage_component">
+            <div class="title">电气工程系 主任</div>
+            <div class="list">
+              <div class="name">张三</div>
+              <div class="info">分工安排：全面主持行政工作</div>
+              <div class="info">工作邮箱：zzzzzz@11.com</div>
+            </div>
+          </div>
+          <!-- 按职称 -->
+          <div class="teacher-title navitage_component">
+            <div class="faculty-organization-item">
+              <div class="title">学科负责人</div>
+              <div class="module">
+                <div
+                  class="subject-module d-flex flex-row justify-content-between"
+                >
+                  <span class="subject-module-title">一级学科</span>
+                  <span class="subject-module-title">张三</span>
+                </div>
+                <div class="subject-module">
+                  <span class="subject-module-title">二级学科</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+              </div>
+            </div>
+            <div class="faculty-organization-item">
+              <div class="title">教研组主任</div>
+              <div class="module">
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+                <div
+                  class="principal-item d-flex flex-row justify-content-between"
+                >
+                  <span>张三</span>
+                  <span>测试</span>
+                </div>
+              </div>
+            </div>
+            <div class="faculty-organization-item">
+              <div class="title">博士后流动站</div>
+              <div class="module">
+                <div class="doctor-module-item">
+                  <span>站长</span>
+                  <span>张三</span>
+                </div>
+                <div class="doctor-module-item">
+                  <span>秘书</span>
+                  <span>张三</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 兼职兼聘 -->
+          <div class="teacher-parttime navitage_component">
+            <!-- 头部 -->
+            <div
+              class="faculty-history-header d-flex flex-row justify-content-between"
+            >
+              <span class="line"></span>
+              <div class="desc">
+                <p>电气工程系历史悠久，</p>
+                <p>
+                  其源头可追溯到清光绪34年（1908年），唐文治担任监督（即校长），增设电机专科，预科一年，专科三年。
+                </p>
+                <p>在国内各大学中，上海交通大学最早创设电机工程转科。</p>
+              </div>
+              <span class="line"></span>
+            </div>
+            <!-- 列表 -->
+            <div class="faculty-history-content">
+              <!-- 线 -->
+              <div class="middle-line"></div>
+              <!-- 遍历处理时间树 -->
+              <div class="list">
+                <div
+                  v-for="(item, index) in historyList"
+                  :key="index"
+                  class="list-item d-flex flex-row"
+                >
+                  <div class="left">
+                    <img
+                      v-if="index % 2 === 1 && item.imageUrl"
+                      :src="item.imageUrl"
+                      alt=""
+                    />
+                    <div v-if="index % 2 === 0">
+                      <div class="time">{{ item.time }}</div>
+                      <div class="content">{{ item.content }}</div>
+                    </div>
+                  </div>
+                  <div class="mid">
+                    <div v-if="item.imageUrl">虚心</div>
+                    <div v-else>实心</div>
+                  </div>
+                  <div class="right">
+                    <img
+                      v-if="index % 2 === 0 && item.imageUrl"
+                      :src="item.imageUrl"
+                      alt=""
+                    />
+                    <div v-if="index % 2 === 1">
+                      <div class="time">{{ item.time }}</div>
+                      <div class="content">{{ item.content }}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- 尾部 -->
     <footer>
-        <div class="content">
-            <div class="container">
-                <div class="footNav d-flex flex-row justify-content-start">
-                    <ul class="d-flex flex-row">
-                        <li class="footNavItem">
-                            <span>院系概况</span>
-                            <ol>
-                                <li>系概况</li>
-                                <li>系领导</li>
-                                <li>机构设置</li>
-                                <li>历史沿革</li>
-                            </ol>
-                        </li>
-                        <li class="footNavItem">
-                            <span>新闻动态</span>
-                            <ol>
-                                <li>院系新闻</li>
-                                <li>科研动态</li>
-                                <li>通知公告</li>
-                                <li>党建新闻</li>
-                            </ol>
-                        </li>
-                        <li class="footNavItem">
-                            <span>党务工作</span>
-                            <ol>
-                                <li>支部概况</li>
-                                <li>党员风采</li>
-                                <li>获奖情况</li>
-                                <li>学习园地</li>
-                            </ol>
-                        </li>
-                        <li class="footNavItem">
-                            <span>师资力量</span>
-                            <ol>
-                                <li>师资一览</li>
-                                <li>工程实验</li>
-                                <li>博士后</li>
-                                <li>行政</li>
-                                <li>兼职兼聘</li>
-                            </ol>
-                        </li>
-                        <li class="footNavItem">
-                            <span>科学研究</span>
-                            <ol>
-                                <li>科研概况</li>
-                                <li>科研获奖</li>
-                                <li>重大成果</li>
-                                <li>顶级论文</li>
-                                <li>科研基地</li>
-                                <li>专著</li>
-                            </ol>
-                        </li>
-                        <li class="footNavItem">
-                            <span>人才培养</span>
-                            <ol>
-                                <li>本科生培养体系</li>
-                                <li>研究生培养体系</li>
-                                <li>精品课体系</li>
-                                <li>教学成果</li>
-                            </ol>
-                        </li>
-                        <li class="footNavItem">
-                            <span>校友专栏</span>
-                            <ol>
-                                <li>杰出校友</li>
-                                <li>历届本科毕业生</li>
-                                <li>历届研究毕业生</li>
-                                <li>永远怀念</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </div>
-                <div class="friendLink d-flex flex-row align-items-center">
-                    <div class="name">友情链接</div>
-                    <ul class="links d-flex flex-row">
-                        <li><a href="/">国家自然科学基金委员会</a></li>
-                        <li><a href="/">中华人民共和国科学技术部</a></li>
-                        <li><a href="/">中华人民共和国工业和信息化部</a></li>
-                        <li><a href="/">国家能源局</a></li>
-                        <li><a href="/">国家电网有限公司</a></li>
-                        <li><a href="/">中国南方电网</a></li>
-                        <li><a href="/">上海市科委</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="content">
+        <div class="container">
+          <div class="footNav d-flex flex-row justify-content-start">
+            <ul class="d-flex flex-row">
+              <li class="footNavItem">
+                <span>院系概况</span>
+                <ol>
+                  <li>系概况</li>
+                  <li>系领导</li>
+                  <li>机构设置</li>
+                  <li>历史沿革</li>
+                </ol>
+              </li>
+              <li class="footNavItem">
+                <span>新闻动态</span>
+                <ol>
+                  <li>院系新闻</li>
+                  <li>科研动态</li>
+                  <li>通知公告</li>
+                  <li>党建新闻</li>
+                </ol>
+              </li>
+              <li class="footNavItem">
+                <span>党务工作</span>
+                <ol>
+                  <li>支部概况</li>
+                  <li>党员风采</li>
+                  <li>获奖情况</li>
+                  <li>学习园地</li>
+                </ol>
+              </li>
+              <li class="footNavItem">
+                <span>师资力量</span>
+                <ol>
+                  <li>师资一览</li>
+                  <li>工程实验</li>
+                  <li>博士后</li>
+                  <li>行政</li>
+                  <li>兼职兼聘</li>
+                </ol>
+              </li>
+              <li class="footNavItem">
+                <span>科学研究</span>
+                <ol>
+                  <li>科研概况</li>
+                  <li>科研获奖</li>
+                  <li>重大成果</li>
+                  <li>顶级论文</li>
+                  <li>科研基地</li>
+                  <li>专著</li>
+                </ol>
+              </li>
+              <li class="footNavItem">
+                <span>人才培养</span>
+                <ol>
+                  <li>本科生培养体系</li>
+                  <li>研究生培养体系</li>
+                  <li>精品课体系</li>
+                  <li>教学成果</li>
+                </ol>
+              </li>
+              <li class="footNavItem">
+                <span>校友专栏</span>
+                <ol>
+                  <li>杰出校友</li>
+                  <li>历届本科毕业生</li>
+                  <li>历届研究毕业生</li>
+                  <li>永远怀念</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div class="friendLink d-flex flex-row align-items-center">
+            <div class="name">友情链接</div>
+            <ul class="links d-flex flex-row">
+              <li><a href="/">国家自然科学基金委员会</a></li>
+              <li><a href="/">中华人民共和国科学技术部</a></li>
+              <li><a href="/">中华人民共和国工业和信息化部</a></li>
+              <li><a href="/">国家能源局</a></li>
+              <li><a href="/">国家电网有限公司</a></li>
+              <li><a href="/">中国南方电网</a></li>
+              <li><a href="/">上海市科委</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="bottomContent">
-            <div class="container d-flex flex-row justify-content-between align-items-center">
-                <div class="leftSide">
-                    <div class="logo"></div>
-                </div>
-                <div class="rightSide">
-                    <span>沪交ICP备2010961 版权所有©上海交通大学电气工程系</span>
-                    <span>技术支持：柏优传媒</span>
-                </div>
-            </div>
+      </div>
+      <div class="bottomContent">
+        <div
+          class="container d-flex flex-row justify-content-between align-items-center"
+        >
+          <div class="leftSide">
+            <div class="logo"></div>
+          </div>
+          <div class="rightSide">
+            <span>沪交ICP备2010961 版权所有©上海交通大学电气工程系</span>
+            <span>技术支持：柏优传媒</span>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
-<script src="./plugins/jquery.min.3.6.0.js"></script>
-<script src="./js/navigate.js"></script>
-<script src="./plugins/less.min.js"></script>
-<script src="./js/teacher-team.js"></script>
-
+  </body>
+  <script src="./plugins/jquery.min.3.6.0.js"></script>
+  <script src="./js/navigate.js"></script>
+  <script src="./js/teacher-team.js"></script>
 </html>

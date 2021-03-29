@@ -1,0 +1,166 @@
+.alumni {
+  background-color: #fff;
+  padding: 42px 32px;
+}
+.alumni-undergraduate {
+  display: flex;
+  flex-wrap: wrap;
+}
+.alumni-undergraduate-item {
+  background: #fff;
+  width: 23%;
+  padding: 30px;
+  margin-right: 27px;
+  margin-bottom: 32px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.alumni-undergraduate-item span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  line-height: 16px;
+}
+.alumni-undergraduate-item em {
+  font-size: 32px;
+  font-weight: 500;
+  color: #BC1C21;
+  line-height: 24px;
+}
+.alumni-undergraduate-item .title {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  line-height: 14px;
+  margin: 24px 0;
+}
+.alumni-undergraduate-item .title::after {
+  content: '';
+  width: 2px;
+  height: 28px;
+  background-color: #BC1C21;
+  position: absolute;
+  top: 0;
+  left: -31px;
+}
+.alumni-undergraduate-item .detail-btn {
+  cursor: pointer;
+  position: relative;
+  color: #BC1C21;
+}
+.alumni-undergraduate-item .detail-btn::after {
+  content: '';
+  width: 56px;
+  height: 2px;
+  background-color: #BC1C21;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+.alumni-undergraduate-item:nth-child(4n) {
+  margin-right: 0;
+}
+.alumni-undergraduate-item:hover {
+  background-color: #BC1C21;
+}
+.alumni-undergraduate-item:hover span,
+.alumni-undergraduate-item:hover em {
+  color: #fff;
+}
+.alumni-graduate {
+  display: flex;
+  flex-wrap: wrap;
+}
+.alumni-graduate-item {
+  background: #fff;
+  width: 23.1%;
+  padding: 30px 24px;
+  margin-right: 22px;
+  margin-bottom: 32px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.alumni-graduate-item span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  line-height: 16px;
+}
+.alumni-graduate-item em {
+  font-size: 32px;
+  font-weight: 500;
+  color: #BC1C21;
+  line-height: 24px;
+}
+.alumni-graduate-item .title {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  line-height: 14px;
+  margin: 24px 0;
+}
+.alumni-graduate-item .title::after {
+  content: '';
+  width: 2px;
+  height: 28px;
+  background-color: #BC1C21;
+  position: absolute;
+  top: 0;
+  left: -24px;
+}
+.alumni-graduate-item .detail-btn span {
+  display: inline-block;
+  width: 95px;
+  text-align: center;
+  color: #5a5a5a;
+  padding: 6px 0;
+  background: #f1f1f1;
+}
+.alumni-graduate-item .detail-btn span:first-child {
+  margin-right: 10px;
+}
+.alumni-graduate-item .detail-btn span:hover {
+  background-color: #BC1C21;
+  color: #fff;
+}
+.alumni-graduate-item:nth-child(4n) {
+  margin-right: 0;
+}
+.dialog .content .header {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5c5c5c;
+  line-height: 28px;
+  margin: 45px 0;
+}
+.dialog .content .header .item {
+  margin-right: 90px;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+.dialog .content .header .item span:first-child {
+  display: inline-block;
+  min-width: 80px;
+  max-width: 80px;
+  margin-right: 24px;
+}
+.dialog .content .header .item:nth-child(4n) {
+  margin-right: 0;
+}
+.dialog .content .download-list {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5c5c5c;
+  line-height: 28px;
+  padding-top: 36px;
+  border-top: 1px solid #c9c9c9;
+}
+.dialog .content .download-list .el-icon-download {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #BC1C21;
+}
