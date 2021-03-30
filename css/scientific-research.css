@@ -2,21 +2,25 @@
   background-color: #fff;
   padding: 32px;
 }
+
 .scientific-detail {
   display: flex;
   flex-wrap: wrap;
 }
+
 .scientific-detail-item {
   background: #f8f8f8;
   padding: 50px 30px;
   width: 24.6%;
 }
+
 .scientific-detail-item .num {
   font-size: 30px;
   font-weight: bold;
   color: #ccc;
   line-height: 30px;
 }
+
 .scientific-detail-item .title {
   font-size: 15px;
   font-weight: bold;
@@ -29,6 +33,7 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
 .scientific-detail-item .content {
   font-size: 12px;
   font-weight: 400;
@@ -41,17 +46,20 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
+
 .scientific-detail-item .detail {
   font-size: 12px;
   font-weight: 400;
   color: #a5a5a5;
   line-height: 18px;
 }
+
 .scientific-detail-item .detail span:last-child {
   color: #2b2b2b;
   position: relative;
   cursor: pointer;
 }
+
 .scientific-detail-item .detail span:last-child::after {
   content: '';
   width: 16px;
@@ -61,4 +69,32 @@
   position: absolute;
   top: 2px;
   left: -3px;
+}
+
+@media screen and (max-width:600px) {
+  .scientific {
+    padding: 8px;
+  }
+
+  .scientific-detail-item .num {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .scientific-detail-item {
+    padding: 20px 4px;
+    width: 24.6%;
+  }
+
+  .scientific-detail-item .title {
+    margin: 6px 0;
+  }
+
+  .scientific-detail-item .content {
+    margin-bottom: 16px;
+  }
+
+  .offset-2 {
+    margin-left: 0;
+  }
 }

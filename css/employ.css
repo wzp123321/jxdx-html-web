@@ -2,12 +2,14 @@
   padding: 50px 40px;
   background-color: #fff;
 }
+
 .employ-undergraduate-description .title {
   position: relative;
   color: #BC1C21;
   padding-left: 24px;
   padding-bottom: 36px;
 }
+
 .employ-undergraduate-description .title::before {
   content: '';
   width: 8px;
@@ -18,16 +20,19 @@
   top: 8px;
   left: 6px;
 }
+
 .employ-undergraduate-description .content {
   font-size: 14px;
   font-weight: 400;
   color: #5a5a5a;
   line-height: 24px;
 }
+
 .employ-undergraduate-sequence {
   padding: 50px 40px;
   background-color: #fff;
 }
+
 .employ-undergraduate-sequence-title {
   color: #BC1C21;
   font-size: 18px;
@@ -36,9 +41,11 @@
   padding: 26px 0;
   border-bottom: 1px solid #BC1C21;
 }
+
 .employ-undergraduate-sequence-list {
   margin: 40px 0;
 }
+
 .employ-undergraduate-sequence-list .employ-item {
   position: relative;
   background-color: #f7f7f7;
@@ -49,6 +56,7 @@
   display: inline-block;
   transition: all 300ms;
 }
+
 .employ-undergraduate-sequence-list .employ-item .title {
   font-size: 22px;
   font-weight: 400;
@@ -61,9 +69,11 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
 .employ-undergraduate-sequence-list .employ-item .title:hover {
   color: #BC1C21;
 }
+
 .employ-undergraduate-sequence-list .employ-item .content {
   font-size: 14px;
   font-weight: 400;
@@ -76,6 +86,7 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+
 .employ-undergraduate-sequence-list .employ-item .detail {
   cursor: pointer;
   width: 100%;
@@ -85,13 +96,16 @@
   color: #3f3f3f;
   line-height: 20px;
 }
+
 .employ-undergraduate-sequence-list .employ-item:nth-child(3n) {
   margin-right: 0;
 }
+
 .employ-undergraduate-sequence-list .employ-item:hover {
   box-shadow: 0 0 7px 1px #888;
   transition: all 500ms;
 }
+
 .employ-undergraduate-sequence-list .employ-item::before {
   content: '';
   width: 9px;
@@ -101,6 +115,7 @@
   left: 0;
   background-color: #a00009;
 }
+
 .dialog .content .header {
   font-size: 14px;
   font-weight: 400;
@@ -108,6 +123,7 @@
   line-height: 28px;
   margin: 45px 0;
 }
+
 .dialog .content .download-list {
   font-size: 14px;
   font-weight: 400;
@@ -116,8 +132,61 @@
   padding-top: 36px;
   border-top: 1px solid #c9c9c9;
 }
+
 .dialog .content .download-list .el-icon-download {
   font-size: 18px;
   margin-right: 12px;
   color: #BC1C21;
+}
+
+@media screen and (max-width:600px) {
+  .common-navigate .common-navigate-list span {
+    max-width: 20%;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .employ-undergraduate-description,
+  .employ-undergraduate-sequence {
+    padding: 12px 8px;
+  }
+
+  .employ-undergraduate-sequence-title {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 8px 0;
+  }
+
+  .employ-undergraduate-sequence-list {
+    margin: 16px 0;
+  }
+
+  .employ-undergraduate-sequence-list .employ-item {
+    padding: 8px 3px;
+    margin-right: 7px;
+    margin-bottom: 12px;
+  }
+
+  .employ-undergraduate-sequence-list .employ-item::before {
+    width: 5px;
+    height: 4px;
+    top: 18px;
+    left: -3px;
+  }
+
+  .employ-undergraduate-sequence-list .employ-item .title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+
+  .employ-undergraduate-sequence-list .employ-item .content {
+    margin-bottom: 12px;
+  }
+
+  .employ-undergraduate-sequence-list .employ-item .detail {
+    font-size: 12px;
+  }
 }

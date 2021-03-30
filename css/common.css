@@ -39,7 +39,7 @@ p {
 .el-pagination .btn-prev,
 .el-pagination .btn-next {
   color: #fff !important;
-  background-color: #BC1C21  !important;
+  background-color: #BC1C21 !important;
   padding: 0 13px;
   margin: 0 12px !important;
 }
@@ -223,6 +223,10 @@ footer .bottomContent {
   line-height: 67px;
 }
 
+.common-navigate .common-navigate-list {
+  text-align: right;
+}
+
 .common-navigate .common-navigate-list span {
   cursor: pointer;
   position: relative;
@@ -243,4 +247,35 @@ footer .bottomContent {
   bottom: -23px;
   left: 0;
   transition: all 300ms;
+}
+
+@media screen and (min-width:600px) {
+  .pad-24 {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container {
+    padding: 0 !important;
+  }
+
+  .common-navigate {
+    padding: 8px;
+  }
+
+  .common-navigate .common-navigate-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .common-navigate .common-navigate-list span {
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+
+  .common-navigate .common-navigate-list .active-tab::after {
+    bottom: -12px;
+  }
 }

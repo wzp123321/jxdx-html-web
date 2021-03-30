@@ -47,9 +47,9 @@
     <!-- 内容 -->
     <main>
       <div class="container">
-        <div class="common-navigate d-flex flex-row justify-content-between">
-          <div class="common-navigate-title">院系概况</div>
-          <div class="common-navigate-list">
+        <div class="common-navigate row">
+          <div class="common-navigate-title col-lg-2 col-2">院系概况</div>
+          <div class="common-navigate-list col-lg-8 col-8 offset-2 offset-xl-2">
             <span data-tab="1">系概况</span>
             <span data-tab="2">系领导</span>
             <span data-tab="3">机构设置</span>
@@ -114,8 +114,8 @@
             </div>
           </div>
           <!-- 机构设置 -->
-          <div class="faculty-organization navitage_component">
-            <div class="faculty-organization-item">
+          <div class="faculty-organization navitage_component row">
+            <div class="faculty-organization-item col-12">
               <div class="title">学科负责人</div>
               <div class="module">
                 <div
@@ -153,7 +153,7 @@
                 </div>
               </div>
             </div>
-            <div class="faculty-organization-item">
+            <div class="faculty-organization-item col-12">
               <div class="title">教研组主任</div>
               <div class="module">
                 <div
@@ -188,7 +188,7 @@
                 </div>
               </div>
             </div>
-            <div class="faculty-organization-item">
+            <div class="faculty-organization-item col-12">
               <div class="title">博士后流动站</div>
               <div class="module">
                 <div class="doctor-module-item">
@@ -220,43 +220,7 @@
             </div>
             <!-- 列表 -->
             <div class="faculty-history-content">
-              <!-- 线 -->
-              <div class="middle-line"></div>
-              <!-- 遍历处理时间树 -->
-              <div class="list">
-                <div
-                  v-for="(item, index) in historyList"
-                  :key="index"
-                  class="list-item d-flex flex-row"
-                >
-                  <div class="left">
-                    <img
-                      v-if="index % 2 === 1 && item.imageUrl"
-                      :src="item.imageUrl"
-                      alt=""
-                    />
-                    <div v-if="index % 2 === 0">
-                      <div class="time">{{ item.time }}</div>
-                      <div class="content">{{ item.content }}</div>
-                    </div>
-                  </div>
-                  <div class="mid">
-                    <div v-if="item.imageUrl">虚心</div>
-                    <div v-else>实心</div>
-                  </div>
-                  <div class="right">
-                    <img
-                      v-if="index % 2 === 0 && item.imageUrl"
-                      :src="item.imageUrl"
-                      alt=""
-                    />
-                    <div v-if="index % 2 === 1">
-                      <div class="time">{{ item.time }}</div>
-                      <div class="content">{{ item.content }}</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -367,4 +331,5 @@
   </body>
   <script src="./plugins/jquery.min.3.6.0.js"></script>
   <script src="./js/navigate.js"></script>
+  <script src="./js/faculty-profiles.js"></script>
 </html>

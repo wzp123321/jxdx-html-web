@@ -15,11 +15,6 @@ main .swiper-container img {
   height: 100%;
 }
 
-.left-side {
-  width: 33%;
-  margin-left: 24px;
-}
-
 main .main-announcement .announcement {
   position: relative;
   background: #fff;
@@ -142,7 +137,6 @@ main .main-announcement .announcement-list div {
 
 .main-section .main-profiles-list .main-profiles-list-item .content {
   font-size: 14px;
-  font-family: Source Han Sans CN;
   font-weight: 400;
   color: #afafaf;
   line-height: 20px;
@@ -154,6 +148,10 @@ main .main-announcement .announcement-list div {
   -webkit-box-orient: vertical;
 }
 
+.main-section svg {
+  color: #fff;
+}
+
 .main-detail {
   padding-top: 44px;
   background-color: #fff;
@@ -162,8 +160,6 @@ main .main-announcement .announcement-list div {
 }
 
 .main-detail-college {
-  width: 33%;
-  margin-right: 24px;
   padding: 35px 32px;
   background-color: #BC1C21;
   color: #fff;
@@ -254,4 +250,30 @@ main .main-announcement .announcement-list div {
   color: #fff;
   text-align: center;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width:600px) {
+  .main-detail-data {
+    padding: 12px 6px;
+  }
+
+  .main-detail-data .data {
+    flex-wrap: wrap !important;
+  }
+
+  .main-detail-data .data .data-item em {
+    font-size: 24px;
+  }
+
+  .main-detail-data .data .data-item {
+    max-width: 48%;
+    width: 48%;
+    margin-bottom: 12px;
+  }
+
+  .main-detail-data .data .data-item .data-em::after {
+    right: -18px;
+    font-size: 14px;
+    top: -6px;
+  }
 }

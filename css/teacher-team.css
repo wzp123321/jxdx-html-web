@@ -1,11 +1,13 @@
 .teacher-team {
   background: #fff;
-  padding: 14px 40px;
+  padding: 14px 27px;
 }
+
 .teacher-team-wordlist {
   background: #fff;
-  padding: 30px 40px;
+  padding: 30px 0;
 }
+
 .teacher-team-wordlist span {
   display: inline-block;
   padding: 12px;
@@ -16,14 +18,18 @@
   color: #2c2c2c;
   line-height: 14px;
   border: 1px solid #dbdbdb;
+  margin-bottom: 12px;
 }
+
 .teacher-team-wordlist span:first-child {
   padding: 12px 28px;
 }
+
 .teacher-team-wordlist .active-word {
   background-color: #BC1C21;
   color: #fff;
 }
+
 .teacher-team-title {
   color: #BC1C21;
   font-size: 18px;
@@ -33,23 +39,60 @@
   padding: 18px 0;
   border-bottom: 1px solid #BC1C21;
 }
+
 .teacher-team-list {
   line-height: 24px;
   color: #BC1C21;
   margin-top: 24px;
 }
-.teacher-team-list > div .name {
+
+.teacher-team-list>div .name {
   width: 83px;
   text-align: right;
 }
-.teacher-team-list > div .list {
+
+.teacher-team-list>div .list {
   font-size: 16px;
   font-family: Source Han Sans CN;
   font-weight: 500;
   color: #504f4f;
 }
-.teacher-team-list > div .list span {
+
+.teacher-team-list>div .list span {
   display: inline-block;
   margin-left: 32px;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width:600px) {
+  .teacher-team {
+    padding: 6px 10px;
+  }
+
+  .teacher-team-wordlist {
+    padding: 12px 0;
+  }
+
+  .teacher-team-title {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .teacher-team-list {
+    margin-top: 12px;
+  }
+
+  .teacher-team-list>div .list {
+    font-size: 12px;
+  }
+
+  .teacher-team-list>div .list span {
+    margin-left: 22px;
+    margin-bottom: 14px;
+  }
+
+  .teacher-team-list>div .name {
+    width: 68px;
+    font-size: 13px;
+  }
 }

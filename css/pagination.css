@@ -5,6 +5,7 @@
   padding: 24px 0;
   background-color: #fff;
 }
+
 .pagination-wrapper span {
   cursor: pointer;
   padding: 6px 16px;
@@ -12,12 +13,25 @@
   margin: 0 5px;
   border-radius: 4px;
 }
+
 .pagination-wrapper .disabled {
   cursor: not-allowed;
   background-color: #f6f6f6;
 }
+
 .pagination-wrapper .active {
   background-color: #bc1c21;
   color: #fff;
   border: none;
+}
+
+@media screen and (max-width:600px) {
+  .pagination-wrapper {
+    font-size: 12px;
+    padding: 12px 0;
+  }
+
+  .pagination-wrapper span {
+    padding: 4px 8px;
+  }
 }
